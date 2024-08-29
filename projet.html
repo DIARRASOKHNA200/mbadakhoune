@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GESTION MEDICALE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background: #2E7D32;
+    }
+    .banner a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .container {
+      padding: 20px;
+    }
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .image-gallery img {
+      max-width: 300px;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .card i {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    /* Animation CSS */
+    @keyframes slideIn {
+      0% { transform: translateY(100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .intro-section {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .intro-section em, .intro-section h1, .intro-section h4 {
+      animation: slideIn 1.5s ease-out forwards;
+      opacity: 0;
+    }
+    .intro-section em {
+      font-size: 80px;
+      animation-delay: 0s;
+    }
+    .intro-section h1 {
+      animation-delay: 0.5s;
+    }
+    .intro-section h4 {
+      animation-delay: 1s;
+    }
+  </style>
+</head>
+<body>
+<section class="intro-section">
+  <em>BIENVENUE</em>
+  <h1>SUR LA PLATEFORME DE GESTION MEDICALE</h1>
+  <h4>Plongez dans l'univers des infrastructures sanitaires de Kaolack et découvrez comment elles façonnent la vitalité de la communauté.</h4>
+  <a href="#" class="btn1"></a>
+</section>
+
+<!-- HEADER -->
+<header>
+  <div class="banner">
+    <span class="section-left">
+      <a href="mailto:sunu.sante@gmail.com">sunu.sante@gmail.com</a>
+      <a href="tel:770965376">770965376</a>
+    </span>
+    <span class="section-right"></span>
+  </div>
+  <div class="logo parallelogram">
+    <h1>SEN WERGOU YARAM SUNU YITE</h1>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">ACCUEIL</a>
+    <a href="clinique.html">CLINIQUES</a>
+    <a href="cabinet.html">CABINETS</a>
+    <a href="structure.html">STRUCTURES SANITAIRES PUBLICS</a>
+    <a href="kaolack_district-1.html">CARTE INTERACTIVE</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content animate">
+        <!-- Dropdown content can be added here -->
+      </div>
+    </div> 
+  </div>
+</header>
+
+<!-- CONTAINER -->
+<div class="container">
+  <section>
+    <div class="image-gallery">
+      <img src="POSTE DE SANTE.jpeg" alt="Description de l'image 1">
+      <img src="H R.jpg" alt="Description de l'image 2">
+      <img src="C DE SANTE DE KASNAK.jpeg" alt="Description de l'image 3">
+      <img src="LAMP FALL.jpeg" alt="Description de l'image 4">
+      <img src="Jaboot mou sell mi.jpeg" alt="Description de l'image 5">
+      <img src="THIOFACK.jpeg" alt="Description de l'image 6">
+      <!-- Ajoutez plus d'images ici -->
+    </div>
+  </section>
+  
+  <section>
+    <em>GESTION MEDICALE</em>
+    <p>
+      Un lieu dédié à votre bien-être et à votre santé. Notre établissement dispose d'une équipe médicale hautement qualifiée et dévouée, prête à vous offrir les meilleurs soins possibles. Doté d'équipements médicaux de pointe, nous nous engageons à fournir des services de diagnostic et de traitement de qualité. Chez nous, chaque patient est traité avec compassion, respect et dignité. Nous proposons une gamme complète de services médicaux, allant de la médecine générale aux soins spécialisés dans divers domaines. Notre priorité est votre confort et votre rétablissement, et nous travaillons sans relâche pour répondre à vos besoins et attentes. 
+    </p>
+    <p>
+      Avec un environnement sécurisé et accueillant, nous nous efforçons de créer une atmosphère où vous vous sentirez soutenu et pris en charge à chaque étape de votre parcours de santé. Merci de nous faire confiance pour votre bien-être.
+    </p>
+  </section>
+  
+  <!-- SECTION 2 -->
+  <section class="section2">
+    <div class="cards">
+      <div class="card">
+        <i class="fa fa-medkit"></i>
+        <h1>CLINIQUES</h1>
+        <p>Les cliniques sont des établissements de santé privés ou publics qui offrent une gamme variée de services médicaux et chirurgicaux. Elles sont généralement de taille moyenne à grande et disposent d'équipements modernes et de personnel qualifié pour assurer des soins de qualité</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-certificate"></i>
+        <h1>CABINETS PARAMEDICAUX</h1>
+        <p>Les cabinets paramédicaux jouent un rôle important dans le continuum des soins de santé en offrant des services spécialisés et complémentaires qui contribuent à améliorer la santé et le bien-être des patients. Ils travaillent souvent en étroite collaboration avec d'autres professionnels de la santé pour assurer une prise en charge intégrée et holistique des patients</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-stethoscope"></i>
+        <h1>LES STRUCTURES SANITAIRES PUBLICS</h1>
+        <p>En résumé, les structures sanitaires publiques jouent un rôle essentiel dans la promotion de la santé et le bien-être de la population, en offrant des soins médicaux accessibles, préventifs et curatifs, ainsi qu'en menant des activités de surveillance, de réglementation et de recherche pour améliorer les systèmes de santé dans leur ensemble.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2023 GESTION MEDICALE. Tous droits réservés.
+</footer>
+
+<script>
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  function moveCarousel(direction) {
+    items[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + direction + totalItems) % totalItems;
+    items[currentIndex].classList.add('active');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    items[currentIndex].classList.add('active');
+    setInterval(() => moveCarousel(1), 3000); // Change image every 3 seconds
+  });
+</script>
+</body>
+</html>
